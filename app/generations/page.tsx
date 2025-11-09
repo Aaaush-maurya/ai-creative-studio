@@ -55,9 +55,9 @@ export default function GenerationsPage() {
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <div>
-          <h2 className="text-3xl font-bold text-slate-900 mb-1">My Generations</h2>
+          <h2 className="text-3xl font-bold text-slate-900 mb-1">My Restaurant Images</h2>
           <p className="text-sm text-slate-600">
-            {gens.length === 0 ? "No generations yet" : `${gens.length} generation${gens.length !== 1 ? 's' : ''}`}
+            {gens.length === 0 ? "No images generated yet" : `${gens.length} image${gens.length !== 1 ? 's' : ''} generated`}
           </p>
         </div>
       </div>
@@ -70,14 +70,14 @@ export default function GenerationsPage() {
 
       {gens.length === 0 && !loading ? (
         <div className="bg-white/70 backdrop-blur-sm p-12 rounded-xl shadow-sm border border-slate-200/60 text-center">
-          <div className="text-6xl mb-4">🎨</div>
-          <h3 className="text-xl font-semibold text-slate-900 mb-2">No generations yet</h3>
-          <p className="text-slate-600 mb-6">Start creating amazing images to see them here!</p>
+          <div className="text-6xl mb-4">🍽️</div>
+          <h3 className="text-xl font-semibold text-slate-900 mb-2">No images generated yet</h3>
+          <p className="text-slate-600 mb-6">Start creating beautiful restaurant images to see them here!</p>
           <Link 
             href="/" 
             className="inline-block px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-medium rounded-lg transition-all shadow-sm hover:shadow-md"
           >
-            Create Your First Image
+            Generate Your First Image
           </Link>
         </div>
       ) : (
@@ -97,7 +97,7 @@ export default function GenerationsPage() {
               </div>
               <div className="p-4">
                 <div className="mb-3">
-                  <div className="text-xs font-semibold text-indigo-600 uppercase tracking-wide mb-1">Prompt</div>
+                  <div className="text-xs font-semibold text-indigo-600 uppercase tracking-wide mb-1">Description</div>
                   <div className="text-sm text-slate-900 line-clamp-2">{g.original_prompt}</div>
                 </div>
                 <div className="text-xs text-slate-500 mb-4">

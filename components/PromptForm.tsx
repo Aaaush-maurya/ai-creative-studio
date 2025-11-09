@@ -70,7 +70,7 @@ export default function PromptForm({ user }: Props) {
     <div className="bg-white/70 backdrop-blur-sm p-6 sm:p-8 rounded-xl shadow-sm border border-slate-200/60">
       <div className="mb-6">
         <label htmlFor="prompt" className="block mb-2 text-sm font-semibold text-slate-700">
-          Enter your prompt
+          Describe what you want to generate
         </label>
         <textarea 
           id="prompt"
@@ -81,7 +81,7 @@ export default function PromptForm({ user }: Props) {
             setPrompt(e.target.value);
             setError(null);
           }}
-          placeholder="Describe the image you want to generate... (e.g., 'a sunset over mountains')"
+          placeholder="Describe your restaurant image... (e.g., 'a gourmet burger with crispy fries on a wooden table', 'cozy Italian restaurant interior with warm lighting', 'fresh sushi platter on a modern plate')"
         />
         {enhanced && enhanced !== prompt && (
           <div className="mt-3 p-3 bg-blue-50 border border-blue-200 rounded-lg">
@@ -130,11 +130,11 @@ export default function PromptForm({ user }: Props) {
 
       {imageUrl && (
         <div className="mt-8 p-6 bg-gradient-to-br from-slate-50 to-indigo-50 rounded-xl border border-slate-200/60">
-          <h3 className="text-lg font-semibold mb-4 text-slate-900">Generated Image</h3>
+          <h3 className="text-lg font-semibold mb-4 text-slate-900">Your Restaurant Image</h3>
           <div className="relative rounded-lg overflow-hidden shadow-lg bg-white p-2">
             <img 
               src={imageUrl} 
-              alt="Generated artwork" 
+              alt="Generated restaurant image" 
               className="w-full h-auto rounded-lg"
               loading="lazy"
             />

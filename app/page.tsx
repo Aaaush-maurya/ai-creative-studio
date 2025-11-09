@@ -48,7 +48,7 @@ export default function Home() {
           <h2 className="text-2xl font-semibold text-slate-900 mb-1">
             Welcome, <span className="text-indigo-600">{user?.email}</span>
           </h2>
-          <p className="text-sm text-slate-600">Create stunning images from text prompts using AI</p>
+          <p className="text-sm text-slate-600">Generate beautiful images for your restaurant - food, ambiance, menu items, and more</p>
         </div>
         <button 
           onClick={handleLogout} 

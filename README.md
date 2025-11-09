@@ -1,6 +1,6 @@
-# AI Creative Studio (Google Generative AI)
+# Restaurant Image Generator (Google Generative AI)
 
-This is a Next.js (App Router) + TypeScript project demonstrating a text-to-image workflow using Google Generative AI for prompt enhancement and image generation, with Supabase for auth, storage, and persistence.
+This is a Next.js (App Router) + TypeScript project designed for restaurants to generate high-quality images from text descriptions. It uses Google Generative AI for prompt enhancement and image generation, with Supabase for auth, storage, and persistence. Perfect for creating food photography, restaurant ambiance images, menu item visuals, and marketing materials.
 
 The README below is structured with concise tables for quick reference: setup, environment variables, models used, and API route documentation.
 

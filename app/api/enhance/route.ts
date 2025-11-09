@@ -30,8 +30,8 @@ export async function POST(req: Request) {
 
     const userPrompt = prompt.trim();
     
-    // Create a clear prompt for enhancement
-    const enhancementPrompt = `You are a prompt engineering assistant. Improve the following short prompt into a detailed, vivid, composition-rich text-to-image prompt. Add style, mood, camera/lighting details, colors, materials, perspective, and art style terms. Keep it to one paragraph. Return ONLY the enhanced prompt, no explanations.
+    // Create a clear prompt for enhancement - restaurant-focused
+    const enhancementPrompt = `You are a prompt engineering assistant specialized in restaurant and food imagery. Improve the following short prompt into a detailed, vivid, composition-rich text-to-image prompt for restaurant use. Add professional food photography details: lighting (natural, warm, ambient), camera angle (overhead, side, close-up), food styling, plate presentation, background ambiance, colors, textures, and mood. Focus on making it appetizing and restaurant-quality. Keep it to one paragraph. Return ONLY the enhanced prompt, no explanations.
 
 Original prompt: "${userPrompt}"
 
